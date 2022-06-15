@@ -15,3 +15,13 @@ class RangeClass:
             if(i == value):
                 t1 = True
         return t1
+
+    def GetAllPoints(self):
+        result = ""
+        var = range(self.first, self.last)
+        for i in var:
+            if i < self.last - 1 :
+                result += str(i) + ","
+            else:
+                result += str(i)
+        return result
