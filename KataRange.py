@@ -9,9 +9,9 @@ class RangeClass:
         self.last = last
 
     def Contains(self, value):
+        t1 = False
         var = range(self.first, self.last)
         for i in var:
             if(i == value):
-                return True
-            else:
-                return False
+                t1 = True
+        return t1
