@@ -25,3 +25,6 @@ class RangeClass:
             else:
                 result += str(i)
         return result
+    
+    def EndPoints(self):
+        return str(self.first) + "," + str(self.last-1)
