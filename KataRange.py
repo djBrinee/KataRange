@@ -28,3 +28,13 @@ class RangeClass:
     
     def EndPoints(self):
         return str(self.first) + "," + str(self.last-1)
+
+
+    def Equals(self, other: 'RangeClass'):
+        var1 = range(self.first, self.last)
+        var2 = range(other.first, other.last)
+        if(var1 == var2):
+            return True
+        else:
+            return False
+
