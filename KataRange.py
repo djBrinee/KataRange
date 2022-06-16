@@ -3,6 +3,9 @@
 
 # Class for Range API
 
+from tkinter import BooleanVar
+
+
 class RangeClass:
     def __init__(self, first, last):
         self.first = first
@@ -37,4 +40,16 @@ class RangeClass:
             return True
         else:
             return False
+
+    def overlapsRange(self, other: 'RangeClass'):
+        choice = False
+
+        for i in range(self.first, self.last):
+            for j in range(other.first, other.last):
+                if(i == j):
+                    choice = True
+                else:
+                    choide = False
+        return choice
+                
 
